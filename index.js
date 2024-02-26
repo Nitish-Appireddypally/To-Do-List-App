@@ -29,3 +29,10 @@ listContainer.addEventListener("click",function(e){
         e.target.parentElement.remove();
     }
 },false );
+document.addEventListener('keydown',(val)=>{
+    console.log(val.key)
+    if(val.key==='Enter')
+    {
+        addList();
+    }
+})
